@@ -9,7 +9,7 @@ const Strategy = (props) => {
   <>
     <SEO title="Design" />
 
-    <PageStructure colour={props.theme.colours.red}>
+    <PageStructure colour={props.theme.colours.rubyRed}>
     	<p>Ruby is an independent art director. Their work is primarily based in Branding, Marketing & Digital Design and Creative Programming.</p> 
       <p>They aim to help businesses communicate better through good design, writing and strategy.</p>
       <Image imgName="/images/uploads/tea-gardens-hotel.jpg"/>

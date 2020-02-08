@@ -9,7 +9,7 @@ const Design = (props) => {
   <>
     <SEO title="Design" />
 
-    <PageStructure colour={props.theme.colours.yellow}>
+    <PageStructure colour={props.theme.colours.rubyBlue}>
     	<p>Ruby’s personal work is anchored by colour and purposefully free from a singular medium.</p> 
       <p>Ruby’s short form work is primarily illustrated online content and creative assets produced for online mediums like gifs and face filters</p>
 			<p>Their larger bodies of work are often motivated by geometry, documentation, collection and how medium extends ideas.</p>

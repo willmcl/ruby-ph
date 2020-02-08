@@ -35,15 +35,15 @@ class HomeNavigation extends Component {
         </TextVersion>
         <ColourVersion>
           <Link to="/strategy">
-            <Colour colour={this.props.theme.colours.red}/>
+            <Colour colour={this.props.theme.colours.rubyRed}/>
           </Link>
           
           <Link to="/design">
-            <Colour colour={this.props.theme.colours.yellow}/>
+            <Colour colour={this.props.theme.colours.rubyBlue}/>
           </Link>
 
           <Link to="/content-creation">
-            <Colour colour={this.props.theme.colours.blue}/>
+            <Colour colour={this.props.theme.colours.rubyYellow}/>
           </Link>
         </ColourVersion>
       </Holder>

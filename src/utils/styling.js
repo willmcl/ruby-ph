@@ -9,9 +9,12 @@ export const theme = {
     focus: '#4fcd90',
     error: '#d0021b',
 
-    red: 'red',
-    blue: 'blue',
-    yellow: 'yellow',
+    rubyRed: '#f64a46',
+    rubyBlue: '#93d0d3',
+    rubyYellow: '#ffcb00',
+
+    linkBlue: '#0071fc',
+    highlightPink: '#ff55aa',
   },
   breakpoints: {
     sm: 'min-width: 576px',
