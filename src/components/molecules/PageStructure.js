@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 
 const Holder = styled.div`
   width: 100%;
@@ -18,6 +18,7 @@ const ColourBlock = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 2vw;
 `;
 const ContentBlock = styled.div`
   padding: 2vw;
@@ -28,7 +29,7 @@ class PageStructure extends Component {
   render() {
     return (
       <Holder>
-        <ColourBlock colour={this.props.theme.colours.yellow}>
+        <ColourBlock colour={this.props.colour}>
           <Link to="/">arrow here</Link>
           <a href="mailto:hey@rubyph.com">hey@rubyph.com</a>
         </ColourBlock>
@@ -41,4 +42,4 @@ class PageStructure extends Component {
   }
 }
 
-export default withTheme( PageStructure);
+export default PageStructure;
