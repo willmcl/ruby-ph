@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled, { withTheme } from 'styled-components';
-import Image from '../atoms/Image';
 
 const Holder = styled.div`
   width: 100%;
@@ -13,8 +12,15 @@ const Holder = styled.div`
 `;
 
 const ColourBlock = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: ${props => props.colour};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 const ContentBlock = styled.div`
+  padding: 2vw;
 `;
 
 
@@ -22,16 +28,13 @@ class PageStructure extends Component {
   render() {
     return (
       <Holder>
-        <ColourBlock colour={this.props.theme.colours.red}>
-          <p>arrow here</p>
-        <ColourBlock/>
+        <ColourBlock colour={this.props.theme.colours.yellow}>
+          <Link to="/">arrow here</Link>
+          <a href="mailto:hey@rubyph.com">hey@rubyph.com</a>
+        </ColourBlock>
 
         <ContentBlock>
-          <p>Ruby is an independent art director. Their work is primarily based in Branding, Marketing & Digital Design and Creative Programming.</p> 
-          <p>They aim to help businesses communicate better through good design, writing and strategy.</p>
-          <Image imgName="/images/uploads/tea-gardens-hotel.jpg"/>
-          <p>Hire Ruby to design your brand identity, build your website, program your next event or collaborate on a product (physical or digital.) Don’t hire Ruby to do SEO, or solve financial problems.</p>
-          <p>Visit their full archive of work at <a href="http://archive.rubyph.com">archive.rubyph.com</a></p>
+          {this.props.children}
         </ContentBlock>
       </Holder>
     )
