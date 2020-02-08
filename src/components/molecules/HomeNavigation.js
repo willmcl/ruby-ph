@@ -18,12 +18,11 @@ const ColourVersion = styled.nav`
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
-const Colour = styled.nav`
+const Colour = styled.div`
   width: 100%;
   height: 0;
   padding-bottom: 50%;
   background-color: ${props => props.colour};
-  a {display: inline-block;}
 `;
 
 class HomeNavigation extends Component {
@@ -35,15 +34,17 @@ class HomeNavigation extends Component {
           content creator</Link> from Sydney, Australia. click a colour to read more (downward arrow)</p>
         </TextVersion>
         <ColourVersion>
-          <Colour colour={this.props.theme.colours.red}>
-            <Link to="/strategy"/>
-          </Colour>
-          <Colour colour={this.props.theme.colours.yellow}>
-            <Link to="/design"/>
-          </Colour>
-          <Colour colour={this.props.theme.colours.blue}>
-            <Link to="/content-creation"/>
-          </Colour>
+          <Link to="/strategy">
+            <Colour colour={this.props.theme.colours.red}/>
+          </Link>
+          
+          <Link to="/design">
+            <Colour colour={this.props.theme.colours.yellow}/>
+          </Link>
+
+          <Link to="/content-creation">
+            <Colour colour={this.props.theme.colours.blue}/>
+          </Link>
         </ColourVersion>
       </Holder>
     )
