@@ -3,8 +3,8 @@ export const theme = {
     black: '#373737',
     white: 'white',
     // Links
-    link: '#0000ee',
-    visited: '#551a8b',
+    link: '#0071fc',
+    visited: '#0071fc',
     // Accessibility and forms
     focus: '#4fcd90',
     error: '#d0021b',
@@ -13,7 +13,6 @@ export const theme = {
     rubyBlue: '#93d0d3',
     rubyYellow: '#ffcb00',
 
-    linkBlue: '#0071fc',
     highlightPink: '#ff55aa',
   },
   breakpoints: {

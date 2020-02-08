@@ -10,7 +10,7 @@ const ContentCreation = (props) => {
     <SEO title="Content Creation" />
 
     <PageStructure colour={props.theme.colours.rubyYellow}>
-    	<p>Ruby is a digital content creator operating under the name irlrubyph.</p> 
+    	<p>Ruby is a digital content creator operating under the name <span className="highlight-pink">irlrubyph</span>.</p> 
       <p>Ruby’s digital work is made for creative practitioners with the aim to motivate, encourage, inform and share advice about life. It is also an opportunity to make work that is silly on purpose.</p>
       <Image imgName="/images/uploads/tea-gardens-hotel.jpg"/>
       <p>Hire Ruby to speak at your event, design a digital asset for you, endorse a product, or collaborate on a new one with you.</p>
