@@ -9,7 +9,16 @@ const Holder = styled.nav`
 const TextVersion = styled.nav`
   max-width: 80rem;
   margin: 10rem 0;
+  text-transform: uppercase;
 `;
+
+const TextHighlight = styled.span`
+  background-color: ${props => props.colour};
+  a {
+    color: ${props => props.theme.colours.black};
+  }
+`;
+
 const ColourVersion = styled.nav`
   width: 100%;
   display: grid;
@@ -18,6 +27,7 @@ const ColourVersion = styled.nav`
     grid-template-columns: 1fr 1fr 1fr;
   }
 `;
+
 const Colour = styled.div`
   width: 100%;
   height: 0;
@@ -29,9 +39,8 @@ class HomeNavigation extends Component {
   render() {
     return (
       <Holder>
-        <TextVersion>
-        <p>Ruby PH is a <Link to="/strategy">strategy based art director</Link>, <Link to="/design">designer, writer, illustrator</Link> and <Link to="/content-creation">online
-          content creator</Link> from Sydney, Australia. click a colour to read more (downward arrow)</p>
+        <TextVersion colour={this.props.theme.colours.rubyRed}>
+        <p>Ruby PH is a <TextHighlight colour={this.props.theme.colours.rubyRed}><Link to="/strategy">strategy based art director</Link></TextHighlight>, <TextHighlight colour={this.props.theme.colours.rubyBlue}><Link to="/design">designer, writer, illustrator</Link></TextHighlight> and <TextHighlight colour={this.props.theme.colours.rubyYellow}><Link to="/content-creation">online content creator</Link></TextHighlight> from Sydney, Australia. click a colour to read more (downward arrow)</p>
         </TextVersion>
         <ColourVersion>
           <Link to="/strategy">

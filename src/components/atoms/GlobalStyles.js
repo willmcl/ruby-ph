@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-      margin: 2rem;
+      margin: 0;
       // Use system fonts: https://css-tricks.com/snippets/css/system-font-stack/
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       color: ${props => props.theme.colours.black};
@@ -188,6 +188,16 @@ const GlobalStyle = createGlobalStyle`
   .errorMsg {
       color: ${props => props.theme.colours.error};
   }
+
+  .highlight-pink {
+    color: ${props => props.theme.colours.highlightPink};
+  }
+
+  a { text-decoration: none; }
+
+  .hide { display: none; }
+
+
 `;
 
 export default GlobalStyle;
