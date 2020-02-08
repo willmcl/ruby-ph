@@ -4,18 +4,22 @@ import PageStructure from '../components/molecules/PageStructure';
 import Image from '../components/atoms/Image';
 import { withTheme } from 'styled-components';
 
-const Design = () => (
+const Design = (props) => {
+	return (
   <>
     <SEO title="Design" />
 
-    <PageStructure colour={this.props.theme.colours.yellow}>
-    	<p>Ruby is an independent art director. Their work is primarily based in Branding, Marketing & Digital Design and Creative Programming.</p> 
-      <p>They aim to help businesses communicate better through good design, writing and strategy.</p>
-      <Image imgName="/images/uploads/tea-gardens-hotel.jpg"/>
-      <p>Hire Ruby to design your brand identity, build your website, program your next event or collaborate on a product (physical or digital.) Don’t hire Ruby to do SEO, or solve financial problems.</p>
+    <PageStructure colour={props.theme.colours.yellow}>
+    	<p>Ruby’s personal work is anchored by colour and purposefully free from a singular medium.</p> 
+      <p>Ruby’s short form work is primarily illustrated online content and creative assets produced for online mediums like gifs and face filters</p>
+			<p>Their larger bodies of work are often motivated by geometry, documentation, collection and how medium extends ideas.</p>
+      <Image imgName="/images/uploads/fish.jpg"/>
+      <p>Hire Ruby to write, illustrate or design something for you.</p>
+			<p>Don’t hire Ruby for photography, 3D design or editing, they don’t do it.</p>
       <p>Visit their full archive of work at <a href="http://archive.rubyph.com?subject=Hey!">archive.rubyph.com</a></p>
     </PageStructure>
   </>
-);
+  )
+};
 
 export default withTheme( Design );	

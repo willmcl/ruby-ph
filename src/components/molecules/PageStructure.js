@@ -18,6 +18,7 @@ const ColourBlock = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 2vw;
 `;
 const ContentBlock = styled.div`
