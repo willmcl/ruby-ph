@@ -8,6 +8,10 @@ export const theme = {
     // Accessibility and forms
     focus: '#4fcd90',
     error: '#d0021b',
+
+    red: 'red',
+    blue: 'blue',
+    yellow: 'yellow',
   },
   breakpoints: {
     sm: 'min-width: 576px',

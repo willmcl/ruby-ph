@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from '../components/molecules/Header';
 import Footer from '../components/molecules/Footer';
-import Navigation from '../components/molecules/Navigation';
 import Transition from '../components/atoms/Transition';
 
 import GlobalStyles from '../components/atoms/GlobalStyles';
@@ -29,7 +28,6 @@ class Index extends Component {
             <>
               <GlobalStyles/>
               <Header siteTitle={data.site.siteMetadata.title}/>
-              <Navigation/>
               <Transition location={this.props.location}>
                 <main>{this.props.children}</main>
               </Transition>
