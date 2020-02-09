@@ -3,15 +3,17 @@ export const theme = {
     black: '#373737',
     white: 'white',
     // Links
-    link: '#0000ee',
-    visited: '#551a8b',
+    link: '#0071fc',
+    visited: '#0071fc',
     // Accessibility and forms
     focus: '#4fcd90',
     error: '#d0021b',
 
-    red: 'red',
-    blue: 'blue',
-    yellow: 'yellow',
+    rubyRed: '#f64a46',
+    rubyBlue: '#93d0d3',
+    rubyYellow: '#ffcb00',
+
+    highlightPink: '#ff55aa',
   },
   breakpoints: {
     sm: 'min-width: 576px',

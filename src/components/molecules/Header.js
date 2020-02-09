@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         return (
-          <header className="Header">
+          <header className="Header hide">
             <h1>
               <Link to="/">
                 {this.props.siteTitle}
