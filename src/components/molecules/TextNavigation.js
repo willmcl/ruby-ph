@@ -11,8 +11,17 @@ const TextVersion = styled.nav`
   text-align: justify;
   p {
     width: 88vw;
-    max-width: 70rem;
+    font-size: 5.5vw;
+    line-height: 1.16;
   }
+
+  @media( ${props => props.theme.breakpoints.sm} ){
+    p {
+      font-size: 2.5vw;
+      max-width: 75vw;
+    }
+  }
+
 `;
 
 const TextHighlight = styled.span`
