@@ -21,9 +21,10 @@ const GlobalStyle = createGlobalStyle`
   body {
       margin: 0;
       // Use system fonts: https://css-tricks.com/snippets/css/system-font-stack/
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       color: ${props => props.theme.colours.black};
       background-color: ${props => props.theme.colours.white};
+      font-weight: bold;
   }
 
   h1, h2, h3, h4, h5, h6,
@@ -194,8 +195,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a { text-decoration: none; }
-
-  .hide { display: none; }
 
 
 `;

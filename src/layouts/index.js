@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
 import Header from '../components/molecules/Header';
-import Footer from '../components/molecules/Footer';
 import Transition from '../components/atoms/Transition';
 
 import GlobalStyles from '../components/atoms/GlobalStyles';
@@ -31,7 +30,6 @@ class Index extends Component {
               <Transition location={this.props.location}>
                 <main>{this.props.children}</main>
               </Transition>
-              <Footer/>
             </>
           )}
         />

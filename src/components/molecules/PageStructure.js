@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
+import Footer from '../molecules/Footer';
 
 const Holder = styled.div`
   width: 100%;
@@ -35,16 +36,20 @@ const ContentBlock = styled.div`
 class PageStructure extends Component {
   render() {
     return (
-      <Holder>
-        <ColourBlock colour={this.props.colour}>
-          <Link to="/">arrow here</Link>
-          <a href="mailto:hey@rubyph.com">hey@rubyph.com</a>
-        </ColourBlock>
+      <>
+        <Holder>
+          <ColourBlock colour={this.props.colour}>
+            <Link to="/">arrow here</Link>
+            <a href="mailto:hey@rubyph.com">hey@rubyph.com</a>
+          </ColourBlock>
 
-        <ContentBlock>
-          {this.props.children}
-        </ContentBlock>
-      </Holder>
+          <ContentBlock>
+            {this.props.children}
+          </ContentBlock>
+        </Holder>
+
+        <Footer />
+      </>
     )
   }
 }
