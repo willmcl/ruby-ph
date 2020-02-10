@@ -14,6 +14,9 @@ const Holder = styled.aside`
   font-size: ${props => props.theme.vwFontSize.sm.para};
   line-height: ${props => props.theme.vwLineHeight.para};
   > * { display: none; }
+  a, a:visited { color: ${props => props.theme.colours.black} }
+  a:hover { color: ${props => props.theme.colours.link} }
+  a:focus { color: ${props => props.theme.colours.highlightPink} }
   @media( ${props => props.theme.breakpoints.sm} ){
     padding: 4.5vw;
     > * { display: block }

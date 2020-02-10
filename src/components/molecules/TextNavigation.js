@@ -10,7 +10,8 @@ const TextVersion = styled.nav`
   align-items: center;
   text-transform: uppercase;
   text-align: justify;
-  h1 {
+  .nav-text {
+    justify-content: space-between;
     width: 88vw;
     .read-more-arrow {
       vertical-align: middle;
@@ -18,11 +19,17 @@ const TextVersion = styled.nav`
       height: calc(${props => props.theme.vwFontSize.base.nav} * 0.9);
     }
   }
+  h1 { 
+    display: inline; 
+    font-size: inherit;
+    line-height: inherit;
+  }
 
   @media( ${props => props.theme.breakpoints.sm} ){
     text-align-last: justify;
-    h1 {
+    .nav-text {
       max-width: 75vw;
+      max-height: calc(${props => props.theme.vwFontSize.sm.nav} * 3 * ${props => props.theme.vwLineHeight.nav});
       .read-more-arrow {
         width: calc(${props => props.theme.vwFontSize.sm.nav} * 0.9);
         height: calc(${props => props.theme.vwFontSize.sm.nav} * 0.9);
@@ -45,15 +52,28 @@ const TextHighlight = styled.span`
   }
 `;
 
-const NoWrap = styled.span `
-  opacity: 0;
+const Desktop = styled.span `
+  display: none;
+  @media( ${props => props.theme.breakpoints.sm} ) {
+    display: inline;
+  }
+`;
+
+const Mobile = styled.span `
+  display: block;
+  margin-top: ${props => props.theme.vwFontSize.base.nav};
+  @media( ${props => props.theme.breakpoints.sm} ) {
+    display: none;
+  }
 `;
 
 class TextNavigation extends Component {
   render() {
     return (
       <TextVersion colour={this.props.theme.colours.rubyRed}>
-        <h1 className="nav-text">Ruby PH is a <TextHighlight colour={this.props.theme.colours.rubyRed}><Link to="/strategy">strategy based art director,</Link></TextHighlight><TextHighlight colour={this.props.theme.colours.rubyBlue}><Link to="/design"> designer, writer, illustrator</Link></TextHighlight> and <TextHighlight colour={this.props.theme.colours.rubyYellow}><Link to="/content-creation">online content creator</Link></TextHighlight> from Sydney, Australia. Click a colour to read more <IconArrow iconName='Read More Arrow' className='read-more-arrow' rotate='180'/></h1>
+        <div className="nav-text"><h1>Ruby PH is a <TextHighlight colour={this.props.theme.colours.rubyRed}><Link to="/strategy">strategy based art director,</Link></TextHighlight><TextHighlight colour={this.props.theme.colours.rubyBlue}><Link to="/design"> designer, writer, illustrator</Link></TextHighlight> and <TextHighlight colour={this.props.theme.colours.rubyYellow}><Link to="/content-creation">online content creator</Link></TextHighlight> from Sydney, Australia.</h1> <Desktop>Click a colour to read more <IconArrow iconName='Read More Arrow' className='read-more-arrow' rotate='180'/></Desktop>
+          <Mobile>Swipe left, right & down or tap a colour to read more <IconArrow iconName='Read More Arrow' className='read-more-arrow' rotate='180'/></Mobile>
+        </div>
       </TextVersion>
     )
   }

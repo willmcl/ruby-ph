@@ -90,8 +90,8 @@ const GlobalStyle = createGlobalStyle`
   a:hover { color: ${props => props.theme.colours.link}; }
   a:active,
   a:focus {
-      color: ${props => props.theme.colours.focus};
-      outline: 1px dotted ${props => props.theme.colours.focus};
+      color: ${props => props.theme.colours.highlightPink};
+      outline: 1px dotted ${props => props.theme.colours.highlightPink};
   }
   
   sup, sub {
