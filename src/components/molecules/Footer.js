@@ -4,13 +4,15 @@ import ColourNavigation from '../molecules/ColourNavigation';
 
 const Holder = styled.footer`
 	text-align: center;
+	min-height: 50vh;
 	@media( ${props => props.theme.breakpoints.sm} ){
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 100px 100px;
+		grid-template-rows: 50% 50%;
 		grid-template-areas:
 			"colournav ."
 			"textfooter textfooter";
+		min-height: 100vh;
   }
 
   .colournav {
@@ -27,6 +29,9 @@ const NoBreak = styled.span`
 `
 
 const TextFooter = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: justify;
 	text-transform: uppercase;
 	@media( ${props => props.theme.breakpoints.sm} ){
