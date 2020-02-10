@@ -203,7 +203,7 @@ const GlobalStyle = createGlobalStyle`
     a:hover { color: ${props => props.theme.colours.link} }
     a:focus { color: ${props => props.theme.colours.highlightPink} }
     @media( ${props => props.theme.breakpoints.sm} ){
-      font-size: 2.5vw;
+      font-size: 2.25vw;
     }
   }
 

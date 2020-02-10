@@ -3,8 +3,11 @@ import styled from 'styled-components';
 import ColourNavigation from '../molecules/ColourNavigation';
 
 const Holder = styled.footer`
-	text-align: center;
 	min-height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	@media( ${props => props.theme.breakpoints.sm} ){
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -17,6 +20,11 @@ const Holder = styled.footer`
 
   .colournav {
   	grid-area: colournav;
+  	display: none;
+		@media( ${props => props.theme.breakpoints.sm} ){
+			display: inherit;
+			height: 100%;
+		}
   }
 
   .textfooter {
@@ -30,12 +38,15 @@ const NoBreak = styled.span`
 
 const TextFooter = styled.div`
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: justify;
 	text-transform: uppercase;
+	* { 	max-width: 88vw; }
 	@media( ${props => props.theme.breakpoints.sm} ){
 		text-align: center;
+		* { margin: 0; }
 	}
 `
 
