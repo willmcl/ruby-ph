@@ -42,4 +42,18 @@ export const theme = {
       font-size: ${theme.typography.base * Math.pow( theme.typography.scale.lg, exp )}rem;
     }`
   },
+  vwFontSize: {
+    base: {
+      nav: '5.5vw',
+      para: '5.75vw',
+    },
+    sm: {
+      nav: '2.25vw',
+      para: '2.4vw',
+    },
+  },
+  vwLineHeight: {
+    nav: '1.16',
+    para: '1.3',
+  },
 };

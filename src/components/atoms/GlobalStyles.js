@@ -197,13 +197,13 @@ const GlobalStyle = createGlobalStyle`
   a { text-decoration: none; }
 
   .nav-text {
-    font-size: 5.5vw;
-    line-height: 1.16;
+    font-size: ${props => props.theme.vwFontSize.base.nav};
+    line-height: ${props => props.theme.vwLineHeight.nav};
     a, a:visited { color: ${props => props.theme.colours.black} }
     a:hover { color: ${props => props.theme.colours.link} }
     a:focus { color: ${props => props.theme.colours.highlightPink} }
     @media( ${props => props.theme.breakpoints.sm} ){
-      font-size: 2.25vw;
+      font-size: ${props => props.theme.vwFontSize.sm.nav};
     }
   }
 
