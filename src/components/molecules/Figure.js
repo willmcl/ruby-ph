@@ -5,6 +5,7 @@ import styled, { withTheme } from 'styled-components';
 const Holder = styled.figure`
   margin: 2rem 0;
   width: 100%;
+  figcaption { ${props => props.theme.typeStyles(2)} }
   @media( ${props => props.theme.breakpoints.sm} ){
     max-width: 80%;
     align-self: flex-end;

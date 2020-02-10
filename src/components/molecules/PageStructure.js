@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
+import ColourBlock from '../molecules/ColourBlock';
 import Footer from '../molecules/Footer';
 
 const Holder = styled.div`
@@ -12,30 +12,19 @@ const Holder = styled.div`
   }
 `;
 
-const ColourBlock = styled.aside`
-  width: 100%;
-  height: 100%;
-  background-color: ${props => props.colour};
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  @media( ${props => props.theme.breakpoints.sm} ){
-    padding: 3.75vw;
-  }
-`;
-
 const ContentBlock = styled.div`
-  padding: 3.75vw;
+  padding: 4.5vw 2vw 4.5vw 4.5vw;
   p { 
-    font-size: 5.75vw; 
-    line-height: 1.4;
+    font-size: ${props => props.theme.vwFontSize.base.para}; 
+    line-height: ${props => props.theme.vwLineHeight.para};
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
   }
   @media( ${props => props.theme.breakpoints.sm} ){
     display: flex;
     flex-direction: column;
     p { 
-      font-size: 2.4vw; 
+      font-size: ${props => props.theme.vwFontSize.sm.para}; 
       max-width: 80%;
     }
   }
@@ -47,10 +36,7 @@ class PageStructure extends Component {
     return (
       <>
         <Holder>
-          <ColourBlock colour={this.props.colour}>
-            <Link to="/">arrow here</Link>
-            <a href="mailto:hey@rubyph.com">hey@rubyph.com</a>
-          </ColourBlock>
+          <ColourBlock colour={this.props.colour}/>
 
           <ContentBlock>
             {this.props.children}
