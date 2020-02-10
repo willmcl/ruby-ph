@@ -1,6 +1,6 @@
 export const theme = {
   colours: {
-    black: '#373737',
+    black: '#000000',
     white: 'white',
     // Links
     link: '#0071fc',
