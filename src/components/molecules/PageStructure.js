@@ -27,8 +27,15 @@ const ColourBlock = styled.div`
 
 const ContentBlock = styled.div`
   padding: 3.75vw;
+  p { 
+    font-size: 5.75vw; 
+    line-height: 1.4;
+  }
   @media( ${props => props.theme.breakpoints.sm} ){
-
+    p { 
+      font-size: 2.4vw; 
+      max-width: 80%;
+    }
   }
 `;
 
