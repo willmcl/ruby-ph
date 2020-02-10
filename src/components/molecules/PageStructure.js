@@ -12,7 +12,7 @@ const Holder = styled.div`
   }
 `;
 
-const ColourBlock = styled.div`
+const ColourBlock = styled.aside`
   width: 100%;
   height: 100%;
   background-color: ${props => props.colour};
@@ -32,6 +32,8 @@ const ContentBlock = styled.div`
     line-height: 1.4;
   }
   @media( ${props => props.theme.breakpoints.sm} ){
+    display: flex;
+    flex-direction: column;
     p { 
       font-size: 2.4vw; 
       max-width: 80%;
