@@ -24,7 +24,7 @@ class ColourBlock extends Component {
   render() {
     return (
         <Holder colour={this.props.colour}>
-          <Link to="/"><IconArrow width='6vw' height='6vw' /></Link>
+          <Link to="/"><IconArrow iconName='Back Arrow' size='6vw'/></Link>
           <a href="mailto:hey@rubyph.com">hey@rubyph.com</a>
         </Holder>
     )
