@@ -17,9 +17,12 @@ const Holder = styled.aside`
   a, a:visited { color: ${props => props.theme.colours.black} }
   a:hover { color: ${props => props.theme.colours.link} }
   a:focus { color: ${props => props.theme.colours.highlightPink} }
+
   @media( ${props => props.theme.breakpoints.sm} ){
-    padding: 4.5vw;
+    padding: 4.5vw 4.5vw 9vw;
     > * { display: block }
+    .back-home { position: sticky; top: 4.5vw; }
+    .contact-email { margin-bottom: -4.5vw; }
   }
 `;
 
@@ -27,8 +30,8 @@ class ColourBlock extends Component {
   render() {
     return (
         <Holder colour={this.props.colour}>
-          <Link to="/"><IconArrow iconName='Back Arrow' size='6vw'/></Link>
-          <a href="mailto:hey@rubyph.com">hey@rubyph.com</a>
+          <Link className="back-home" to="/"><IconArrow iconName='Back Arrow' size='6vw'/></Link>
+          <a className="contact-email" href="mailto:hey@rubyph.com">hey@rubyph.com</a>
         </Holder>
     )
   }
