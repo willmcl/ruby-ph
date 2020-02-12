@@ -10,13 +10,13 @@ const Holder = styled.footer`
 	align-items: center;
 
 	@media( ${props => props.theme.breakpoints.sm} ){
+		min-height: 100vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 50% 50%;
 		grid-template-areas:
 			"colournav ."
 			"textfooter textfooter";
-		min-height: 100vh;
   }
 
   .colournav {

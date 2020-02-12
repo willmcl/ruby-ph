@@ -8,6 +8,9 @@ const Holder = styled.div`
   display: grid;
   grid-template-columns: 7.5vw 1fr;
   @media( ${props => props.theme.breakpoints.sm} ){
+    grid-template-columns: 1fr 2fr;
+  }
+  @media( ${props => props.theme.breakpoints.md} ){
     grid-template-columns: 1fr 1fr;
   }
 `;
