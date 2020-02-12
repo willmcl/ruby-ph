@@ -59,9 +59,13 @@ const TextWrapper = styled.div`
 `;
 
 const TextHighlight = styled.span`
-  background-color: ${props => props.colour};
-  a {
+  a { 
     color: ${props => props.theme.colours.black};
+    background-color: ${props => props.colour};
+  }
+  a:hover { 
+    color: ${props => props.theme.colours.link};
+    background-color: transparent; 
   }
 `;
 
