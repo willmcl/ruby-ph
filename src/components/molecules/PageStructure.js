@@ -12,7 +12,7 @@ const Holder = styled.div`
   }
 `;
 
-const ContentBlock = styled.div`
+const ContentBlock = styled.section`
   padding: 4.5vw 2vw 4.5vw 4.5vw;
   p { 
     font-size: ${props => props.theme.vwFontSize.base.para}; 
