@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import ColourNavigation from '../molecules/ColourNavigation';
 
@@ -43,10 +44,25 @@ const TextFooter = styled.div`
 	align-items: center;
 	text-align: justify;
 	text-transform: uppercase;
-	* { 	max-width: 88vw; }
+	* { width: 76vw; text-align-last: justify; }
+	span {
+		display: block;
+		width: 100%;
+		> * {
+			&:after { content: ' — '; }
+			&:last-child:after { content: ''; }
+		}
+		> s { &:after { color: #fff; } }
+	}
 	@media( ${props => props.theme.breakpoints.sm} ){
 		text-align: center;
-		* { margin: 0; }
+		* { width: 88vw; margin: 0; text-align-last: center;}
+		*:first-child { margin-bottom: calc(${props => props.theme.vwLineHeight.nav} * ${props => props.theme.vwFontSize.sm.nav}); }
+		span {
+			display: inline;
+			> *:last-child:after { content: ' — '; }
+		}
+		span:last-child > *:last-child:after { content: ''; }
 	}
 `
 
@@ -55,12 +71,15 @@ class Footer extends Component {
     return ( 
   		<Holder className="Footer">
   			<ColourNavigation classProp="colournav" />
-  			<TextFooter className="textfooter">	
+  			<TextFooter className="textfooter">
+  				<h2 className="nav-text">
+  					<Link to='/'>Return to Home</Link>
+					</h2>
 	        <h2 className="nav-text">
-	        	<a href="mailto:hey@rubyph.com">Contact</a> — <a href="archive.rubyph.com">Archive</a> — <a href="http://instagram.com/irlrubyph">Instagram</a> — <a href="https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw">Youtube</a> — <s>Podcast</s> — <s>Shop</s> 
+	        	<span><a href="mailto:hey@rubyph.com">Contact</a><a href="archive.rubyph.com">Archive</a></span><span><a href="http://instagram.com/irlrubyph">Instagram</a><a href="https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw">Youtube</a></span><span><s>Podcast</s><s>Shop</s></span> 
         	</h2>
 	        <p className="nav-text">
-	        	Designed by Ruby PH — <NoBreak>Coded by <a href="https://www.willmclean.net">Will McLean</a></NoBreak>
+	        	<span>Designed by <Link to='/'>Ruby PH</Link></span><NoBreak>Coded by <a href="https://wills-websites.com/">Will's Websites</a></NoBreak>
         	</p>
 	        </TextFooter>
 			</Holder>
