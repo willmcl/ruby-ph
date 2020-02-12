@@ -40,15 +40,17 @@ const TextFooter = styled.div`
 	align-items: center;
 	text-align: justify;
 	text-transform: uppercase;
+	padding: 4.5vw 0;
 	* { 
 		width: 76vw; 
 		text-align-last: justify; 
-		line-height: calc( ${props => props.theme.vwLineHeight.nav} * 1.5 );
+		line-height: calc( ${props => props.theme.vwFontSize.base.nav} + 2rem );
 	}
 	span {
 		display: block;
 		width: 100%;
 		> * {
+			padding: 1rem 0;
 			&:after { content: ' — '; }
 			&:last-child:after { content: ''; }
 		}
@@ -60,11 +62,12 @@ const TextFooter = styled.div`
 			width: 88vw; 
 			margin: 0; 
 			text-align-last: center;
-			line-height: calc( ${props => props.theme.vwLineHeight.nav} );
+			line-height: ${props => props.theme.vwLineHeight.nav};
 		}
 		*:first-child { margin-bottom: calc(${props => props.theme.vwLineHeight.nav} * ${props => props.theme.vwFontSize.sm.nav}); }
 		span {
 			display: inline;
+			> * { padding: 0; }
 			> *:last-child:after { content: ' — '; }
 		}
 		span:last-child > *:last-child:after { content: ''; }

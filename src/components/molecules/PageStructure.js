@@ -13,7 +13,7 @@ const Holder = styled.div`
 `;
 
 const ContentBlock = styled.section`
-  padding: 4.5vw 2vw 4.5vw 4.5vw;
+  padding: 4.5vw 2vw 80px 4.5vw;
   p { 
     font-size: ${props => props.theme.vwFontSize.base.para}; 
     line-height: ${props => props.theme.vwLineHeight.para};
@@ -23,6 +23,7 @@ const ContentBlock = styled.section`
   @media( ${props => props.theme.breakpoints.sm} ){
     display: flex;
     flex-direction: column;
+    padding-bottom: 4.5vw;
     p { 
       font-size: ${props => props.theme.vwFontSize.sm.para}; 
       max-width: 80%;
