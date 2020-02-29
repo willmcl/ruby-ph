@@ -44,7 +44,7 @@ export const theme = {
   },
   vwFontSize: {
     base: {
-      nav: '5.2vw',
+      nav: '5.15vw',
       para: '5.75vw',
     },
     sm: {

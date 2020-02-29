@@ -46,16 +46,20 @@ const TextFooter = styled.div`
 		text-align-last: justify; 
 		line-height: calc( ${props => props.theme.vwFontSize.base.nav} + 2rem );
 	}
-	span {
-		display: block;
+
+	.line { 
 		width: 100%;
-		> * {
-			padding: 1rem 0;
-			&:after { content: ' — '; }
-			&:last-child:after { content: ''; }
-		}
-		> s { &:after { color: #fff; } }
+		display: flex; 
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: center;
+		> * { width: unset; }
 	}
+
+	.hide {
+		display: none;
+	}
+
 	@media( ${props => props.theme.breakpoints.sm} ){
 		text-align: center;
 		* { 
@@ -65,12 +69,9 @@ const TextFooter = styled.div`
 			line-height: ${props => props.theme.vwLineHeight.nav};
 		}
 		*:first-child { margin-bottom: calc(${props => props.theme.vwLineHeight.nav} * ${props => props.theme.vwFontSize.sm.nav}); }
-		span {
+		.line, .hide {
 			display: inline;
-			> * { padding: 0; }
-			> *:last-child:after { content: ' — '; }
 		}
-		span:last-child > *:last-child:after { content: ''; }
 	}
 `
 
@@ -89,13 +90,43 @@ class Footer extends Component {
   			<ColourNavigation classProp="colournav" />
   			<TextFooter className="textfooter">
   				<h2 className="nav-text">
-  					<Link to='/'>Return to Home</Link>
+  					<Link to='/' className="line">
+	  					<span>Return </span>
+	  					<span>to </span>
+	  					<span>Home</span>
+  					</Link>
 					</h2>
 	        <h2 className="nav-text">
-	        	<span><a href={link.email}>Contact</a> <a href={link.archive}>Archive</a></span> <span><a href={link.ig}>Instagram</a> <a href={link.yt}>Youtube</a></span> <span><s>Podcast</s> <s>Shop</s></span> 
+	        	<span className="line">
+		        	<a href={link.email}>Contact</a>
+		        	<span> — </span>
+		        	<a href={link.archive}>Archive</a>
+		        	<span className="hide"> — </span>
+	        	</span> 
+	        	<span className="line">
+		        	<a href={link.ig}>Instagram</a>
+		        	<span> — </span>
+		        	<a href={link.yt}>Youtube</a>
+		        	<span className="hide"> — </span>
+	        	</span> 
+	        	<span className="line">
+		        	<s>Podcast</s>
+		        	<span> — </span>
+		        	<s>Shop</s>
+	        	</span> 
         	</h2>
 	        <p className="nav-text">
-	        	<span>Designed by <Link to='/'>Ruby PH</Link></span> <span>Coded by <a href={link.willsWebsites}>Will's Websites</a></span>
+	        	<span className="line">
+	        		<span>Designed </span>
+	        		<span>by </span>
+	        		<span>Ruby </span>
+	        		<span>PH</span>
+	        		<span className="hide"> — </span>
+        		</span>
+        		<span className="line">
+        			<span>Coded </span>
+        			<span>by </span>
+        			<a href={link.willsWebsites}>Will’s Websites</a></span>
         	</p>
 	        </TextFooter>
 			</Holder>
