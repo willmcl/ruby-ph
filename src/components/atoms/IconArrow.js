@@ -6,7 +6,7 @@ class IconArrow extends Component {
     iconName: 'Icon Arrow',
     className: '',
     size: '48',
-    fill: '${props => props.theme.colours.black}',
+    fill: `${props => props.theme.colours.black}`,
     rotate: '0',
   };
 
