@@ -74,6 +74,14 @@ const TextFooter = styled.div`
 	}
 `
 
+const link = {
+	email : "mailto:hey@rubyph.com",
+	archive : "archive.rubyph.com",
+	ig : `http://instagram.com/irlrubyph`,
+	yt : `https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw`,
+	willsWebsites : `https://wills-websites.com/`,
+}
+
 class Footer extends Component {
   render() {
     return ( 
@@ -84,10 +92,10 @@ class Footer extends Component {
   					<Link to='/'>Return to Home</Link>
 					</h2>
 	        <h2 className="nav-text">
-	        	<span><a href="mailto:hey@rubyph.com">Contact</a> <a href="archive.rubyph.com">Archive</a></span> <span><a href="http://instagram.com/irlrubyph">Instagram</a> <a href="https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw">Youtube</a></span> <span><s>Podcast</s> <s>Shop</s></span> 
+	        	<span><a href={link.email}>Contact</a> <a href={link.archive}>Archive</a></span> <span><a href={link.ig}>Instagram</a> <a href={link.yt}>Youtube</a></span> <span><s>Podcast</s> <s>Shop</s></span> 
         	</h2>
 	        <p className="nav-text">
-	        	<span>Designed by <Link to='/'>Ruby PH</Link></span> <span>Coded by <a href="https://wills-websites.com/">Will's Websites</a></span>
+	        	<span>Designed by <Link to='/'>Ruby PH</Link></span> <span>Coded by <a href={link.willsWebsites}>Will's Websites</a></span>
         	</p>
 	        </TextFooter>
 			</Holder>
