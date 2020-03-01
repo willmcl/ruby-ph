@@ -8,29 +8,6 @@ const Holder = styled.footer`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	@media( ${props => props.theme.breakpoints.sm} ){
-		min-height: 100vh;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 50% 50%;
-		grid-template-areas:
-			"colournav ."
-			"textfooter textfooter";
-  }
-
-  .colournav {
-  	grid-area: colournav;
-  	display: none;
-		@media( ${props => props.theme.breakpoints.sm} ){
-			display: inherit;
-			height: 100%;
-		}
-  }
-
-  .textfooter {
-  	grid-area: textfooter;
-  }
 `
 
 const TextFooter = styled.div`
@@ -87,7 +64,6 @@ class Footer extends Component {
   render() {
     return ( 
   		<Holder className="Footer">
-  			<ColourNavigation classProp="colournav" />
   			<TextFooter className="textfooter">
   				<h2 className="nav-text">
   					<Link to='/' className="line">
@@ -116,17 +92,19 @@ class Footer extends Component {
 	        	</span> 
         	</h2>
 	        <p className="nav-text">
-	        	<span className="line">
+	        	<a href={link.ig} className="line">
 	        		<span>Designed </span>
 	        		<span>by </span>
 	        		<span>Ruby </span>
 	        		<span>PH</span>
 	        		<span className="hide"> — </span>
-        		</span>
-        		<span className="line">
+        		</a>
+        		<a href={link.willsWebsites} className="line">
         			<span>Coded </span>
         			<span>by </span>
-        			<a href={link.willsWebsites}>Will’s Websites</a></span>
+        			<span>Will’s </span>
+        			<span>Websites</span>
+      			</a>
         	</p>
 	        </TextFooter>
 			</Holder>

@@ -11,7 +11,7 @@ const ContentCreation = (props) => {
 
     <PageStructure colour={props.theme.colours.rubyYellow}>
     	<p>Ruby is a digital content creator operating under the name <span className="highlight-pink">irlrubyph</span>.</p> 
-      <p>Ruby’s digital work is made for creative practitioners with the aim to motivate, encourage, inform and share advice about life. It is also an opportunity to make work that is silly on purpose.</p>
+      <p>Ruby’s digital work is made for creative practitioners with the aim to motivate, inform, encourage, and share advice about creativity. It is also an opportunity to make work that is silly on purpose.</p>
       <Figure 
         imgName="/images/uploads/2019-travel-advice-for-melbourne-illustration.png"
         captionLine1="Travel Advice for Melbourne"
