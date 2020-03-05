@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import ColourNavigation from '../molecules/ColourNavigation';
 
 const Holder = styled.footer`
 	min-height: 50vh;
@@ -50,7 +49,7 @@ const TextFooter = styled.div`
 			display: inline;
 		}
 	}
-`
+`;
 
 const link = {
 	email : "mailto:hey@rubyph.com",
@@ -58,7 +57,7 @@ const link = {
 	ig : `http://instagram.com/irlrubyph`,
 	yt : `https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw`,
 	willsWebsites : `https://wills-websites.com/`,
-}
+};
 
 class Footer extends Component {
   render() {
@@ -100,7 +99,7 @@ class Footer extends Component {
 	        		<span className="hide"> — </span>
         		</a>
         		<a href={link.willsWebsites} className="line">
-        			<span>Coded </span>
+        			<span>Built </span>
         			<span>by </span>
         			<span>Will’s </span>
         			<span>Websites</span>
