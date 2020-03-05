@@ -5,21 +5,22 @@ import {
 } from "react-transition-group"
 
 //This variable will be responsible for our animation duration
-const timeout = 500;
+const timeout = 1000;
 
 //This object contains basic styles for animation, but you can extend them to whatever you like. Be creative!
 const getTransitionStyles = {
   entering: {
     position: 'absolute',
-    opacity: 0,
+    width: '100%',
+    zIndex: -1,
   },
   entered: {
-    transition: `opacity ${timeout}ms ease-in-out`,
-    opacity: 1,
+    zIndex: 0,
   },
   exiting: {
     transition: `all ${timeout}ms ease-in-out`,
-    opacity: 0
+    transform: 'translateY(-100%)',
+    zIndex: 1,
   },
 };
 
