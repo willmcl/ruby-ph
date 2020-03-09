@@ -7,7 +7,7 @@ import { withTheme } from 'styled-components';
 const ContentCreation = (props) => {
 	return (
   <>
-    <SEO title="Content Creation" />
+    <SEO title="irlruphph - digital content creator" />
 
     <PageStructure colour={props.theme.colours.rubyYellow}>
     	<p>Ruby is a digital content creator operating under the name <span className="highlight-pink">irlrubyph</span>.</p> 

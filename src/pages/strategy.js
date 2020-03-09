@@ -7,7 +7,7 @@ import { withTheme } from 'styled-components';
 const Strategy = (props) => {
 	return (
   <>
-    <SEO title="Design" />
+    <SEO title="Art director" />
 
     <PageStructure colour={props.theme.colours.rubyRed}>
     	<p>Ruby is an independent art director. Their work is primarily based in Branding, Marketing & Digital Design and Creative Programming.</p> 
