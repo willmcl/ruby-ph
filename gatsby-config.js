@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Great Start`,
-    description: `Will's great start for Gatsby builds`,
-    author: `Will McLean`,
+    title: `RubyPH Portfolio`,
+    description: `Art director, designer, writer, illustrator, content creator`,
+    author: `Will's Websites'`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `great-start`,
-        short_name: `great-start`,
+        name: `RubyPH Portfolio`,
+        short_name: `RubyPH Portfolio`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import ColourNavigation from '../molecules/ColourNavigation';
 
 const Holder = styled.footer`
 	min-height: 50vh;

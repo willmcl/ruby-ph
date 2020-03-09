@@ -7,7 +7,7 @@ import { withTheme } from 'styled-components';
 const Design = (props) => {
 	return (
   <>
-    <SEO title="Design" />
+    <SEO title="Design, writing, illustration" />
 
     <PageStructure colour={props.theme.colours.rubyBlue}>
     	<p>Ruby’s personal work is anchored by colour and purposefully free from a singular medium.</p> 
