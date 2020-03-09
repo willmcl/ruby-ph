@@ -21,7 +21,7 @@ const getTransitionStyles = {
   },
   exiting: {
     transition: `${timeout}ms ease-in-out`,
-    transitionProperty: `transform, zIndex, opacity`,
+    transitionProperty: `transform, opacity`,
     transform: 'translateY(-75vh)',
     zIndex: 1,
     opacity: 0,
