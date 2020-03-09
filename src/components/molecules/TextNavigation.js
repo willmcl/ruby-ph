@@ -62,6 +62,12 @@ const TextHighlight = styled.span`
   a { 
     color: ${props => props.theme.colours.black};
     background-color: ${props => props.colour};
+    @-moz-document url-prefix() { 
+      padding-top: 4px; 
+      @media( ${props => props.theme.breakpoints.sm} ) {
+        padding-top: 0.26vw; 
+      }
+    }
   }
   a:hover { 
     color: ${props => props.theme.colours.link};
