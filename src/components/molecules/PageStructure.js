@@ -20,6 +20,7 @@ const ContentBlock = styled.section`
   p { 
     font-size: ${props => props.theme.vwFontSize.base.para}; 
     line-height: ${props => props.theme.vwLineHeight.para};
+    margin-bottom: 3rem;
     &:first-child { margin-top: 0; }
     &:last-child { margin-bottom: 0; }
   }
