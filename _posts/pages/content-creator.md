@@ -3,7 +3,7 @@ title: Online Content Creator
 date: 2020-03-09T06:17:01.222Z
 colour: ffcb00
 intro: >-
-  Ruby is a digital content creator operating under the name irlrubyph.
+  Ruby is a digital content creator operating under the name __irlrubyph__.
 
 
   Ruby’s digital work is made for creative practitioners with the aim to

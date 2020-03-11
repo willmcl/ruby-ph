@@ -32,6 +32,7 @@ const ContentBlock = styled.section`
       max-width: 80%;
     }
   }
+  strong { color: ${props => props.theme.colours.highlightPink} }
 `;
 
 
