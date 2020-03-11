@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link, StaticQuery } from 'gatsby';
 import styled, { withTheme } from 'styled-components';
+import { convertToSlug } from '../../utils/helpers';
 
 const ColourVersion = styled.nav`
   width: 100%;
@@ -20,19 +21,37 @@ const Colour = styled.div`
 class ColourNavigation extends Component {
   render() {
     return (
-      <ColourVersion className={this.props.classProp}>
-        <Link to="/strategy">
-          <Colour colour={this.props.theme.colours.rubyRed}/>
-        </Link>
-        
-        <Link to="/design">
-          <Colour colour={this.props.theme.colours.rubyBlue}/>
-        </Link>
-
-        <Link to="/content-creation">
-          <Colour colour={this.props.theme.colours.rubyYellow}/>
-        </Link>
-      </ColourVersion>
+        <StaticQuery
+          query={graphql`
+            query ColourNavigationQuery {
+            allMarkdownRemark(
+              sort: {
+                fields: [frontmatter___date]
+                order: DESC
+              }
+            ){
+              edges {
+                node{
+                  id
+                  frontmatter {
+                    title
+                    colour
+                  }
+                }
+              }
+            }
+          }`}
+          render={data => {
+            return (
+              <ColourVersion className={this.props.classProp}>
+                {data.allMarkdownRemark.edges.map( edge => (
+                  <Link key={edge.node.id} to={'/' + convertToSlug( edge.node.frontmatter.title )}>
+                    <Colour colour={`#${edge.node.frontmatter.colour}`}/>
+                  </Link>
+                ) )}
+              </ColourVersion>
+            )
+          }}/>
     )
   }
 }

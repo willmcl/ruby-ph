@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import SEO from "../components/molecules/SEO";
-import TextNavigation from '../components/molecules/TextNavigation';
+import TextNavigation from '../components/molecules/TextNavigationHolder';
 import ColourNavigation from '../components/molecules/ColourNavigation';
 
 const Holder = styled.nav`

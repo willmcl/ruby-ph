@@ -1,5 +1,7 @@
 ---
 title: Strategy based art director
+date: 2020-03-11T06:17:01.222Z
+colour: f64a46
 intro: >-
   Ruby is an independent art director. Their work is primarily based in
   Branding, Marketing & Digital Design and Creative Programming.

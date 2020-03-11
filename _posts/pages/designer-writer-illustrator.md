@@ -1,5 +1,7 @@
 ---
 title: 'Designer, Writer, Illustrator'
+date: 2020-03-10T06:17:01.222Z
+colour: 93d0d3
 intro: >-
   Ruby’s personal work is anchored by colour and purposefully free from a
   singular medium.
