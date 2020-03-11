@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
 import styled, { withTheme } from 'styled-components';
 import IconArrow from '../atoms/IconArrow';
 import TextNavigation from './TextNavigation';

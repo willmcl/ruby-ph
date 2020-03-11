@@ -7,10 +7,14 @@ const List = styled.ul`
   list-style: none;
   display: inline;
   padding-left: 0;
+  font-size: inherit;
+  line-height: inherit;
 `;
 
 const TextHighlight = styled.li`
   display: inline;
+  font-size: inherit;
+  line-height: inherit;
   a { 
     color: ${props => props.theme.colours.black};
     background-color: ${props => props.colour};
