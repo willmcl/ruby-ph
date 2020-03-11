@@ -77,8 +77,8 @@ class TextNavigationHolder extends Component {
   render() {
     return (
       <Holder>
-        <TextWrapper className="nav-text"><h1>Ruby PH is a <TextNavigation/> from Sydney, Australia.</h1> <Desktop>Click a colour to read more <IconArrow iconName='Read More Arrow' className='read-more-arrow' rotate='180'/></Desktop>
-          <Mobile>Swipe left, right & down or tap a colour to read more <IconArrow iconName='Read More Arrow' className='read-more-arrow' rotate='180'/></Mobile>
+        <TextWrapper className="nav-text"><h1>Ruby PH is a <TextNavigation/> from Sydney, Australia.</h1> <Desktop>Click a colour to read more <IconArrow iconName='Read More Arrow' className='read-more-arrow' rotate={180}/></Desktop>
+          <Mobile>Swipe left, right & down or tap a colour to read more <IconArrow iconName='Read More Arrow' className='read-more-arrow' rotate={180}/></Mobile>
         </TextWrapper>
       </Holder>
     )
