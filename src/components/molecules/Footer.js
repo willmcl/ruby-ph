@@ -53,7 +53,7 @@ const TextFooter = styled.div`
 
 const link = {
 	email : "mailto:hey@rubyph.com",
-	archive : "archive.rubyph.com",
+	archive : "https://archive.rubyph.com",
 	ig : `http://instagram.com/irlrubyph`,
 	yt : `https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw`,
 	willsWebsites : `https://wills-websites.com/`,
@@ -75,13 +75,13 @@ class Footer extends Component {
 	        	<span className="line">
 		        	<a href={link.email}>Contact</a>
 		        	<span> — </span>
-		        	<a href={link.archive}>Archive</a>
+		        	<a href={link.archive} target="_blank" rel="noopener noreferrer">Archive</a>
 		        	<span className="hide"> — </span>
 	        	</span> 
 	        	<span className="line">
-		        	<a href={link.ig}>Instagram</a>
+		        	<a href={link.ig} target="_blank" rel="noopener noreferrer">Instagram</a>
 		        	<span> — </span>
-		        	<a href={link.yt}>Youtube</a>
+		        	<a href={link.yt} target="_blank" rel="noopener noreferrer">Youtube</a>
 		        	<span className="hide"> — </span>
 	        	</span> 
 	        	<span className="line">
@@ -91,14 +91,14 @@ class Footer extends Component {
 	        	</span> 
         	</h2>
 	        <p className="nav-text">
-	        	<a href={link.ig} className="line">
+	        	<a href={link.ig} target="_blank" rel="noopener noreferrer" className="line">
 	        		<span>Designed </span>
 	        		<span>by </span>
 	        		<span>Ruby </span>
 	        		<span>PH</span>
 	        		<span className="hide"> — </span>
         		</a>
-        		<a href={link.willsWebsites} className="line">
+        		<a href={link.willsWebsites} target="_blank" rel="noopener noreferrer" className="line">
         			<span>Built </span>
         			<span>by </span>
         			<span>Will’s </span>
