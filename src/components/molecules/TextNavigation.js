@@ -15,6 +15,9 @@ const TextHighlight = styled.li`
   display: inline;
   font-size: inherit;
   line-height: inherit;
+  &:after { content: ', '; }
+  &:last-child:after { content: ''; }
+  &:last-child:before { content: '& '; }
   a { 
     color: ${props => props.theme.colours.black};
     background-color: ${props => props.colour};
