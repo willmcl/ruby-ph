@@ -7,10 +7,10 @@ intro: >-
   Branding, Marketing & Digital Design and Creative Programming.
 
 
-  They aim to help businesses communicate better through good design, writing
-  and strategy.
-thumbnail: /images/uploads/fish.jpg
-caption: Image caption
+  They aim to help businesses communicate better through strategic visual
+  communication.
+thumbnail: /images/uploads/shirlow-street-studios_extended.gif
+caption: 'Logo & Brand for Philanthropic Art Studio, Shirlow Street Studios, 2019'
 ---
 Hire Ruby to design your brand identity, build your website, program your next event or collaborate on a product (physical or digital.)
 
