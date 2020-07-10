@@ -7,8 +7,13 @@ intro: >-
   Branding, Marketing & Digital Design and Creative Programming.
 
 
-  They aim to help businesses communicate better through strategic visual
-  communication.
+  They aim to help businesses connect to their audiences better through
+  strategic visual communication.
+
+
+  Ruby is currently looking to work on food & beverage brand identities, design
+  for accessible wayfinding, art direction for interior spaces, and creative/
+  arts events.
 thumbnail: /images/uploads/shirlow-street-studios_extended.gif
 caption: 'Logo & Brand for Philanthropic Art Studio, Shirlow Street Studios, 2019'
 ---
