@@ -3,21 +3,23 @@ title: 'Designer, Writer, Illustrator'
 date: 2020-03-10T06:17:01.222Z
 colour: 93d0d3
 intro: >-
-  Ruby’s personal work is anchored by colour and purposefully free from a
-  singular medium.
+  Ruby has developed a broad skillset across writing, design and illustration to
+  visually communicate with different people.
 
 
-  Ruby’s short form work is primarily illustrated online content and creative
-  assets produced for online mediums like gifs and face filters.
+  Employing a sharp strategy of ‘audience first’ for client work; thorough
+  research, tailored client response and exhaustive concept development define
+  the end results for each new project.
 
 
-  Their larger bodies of work are often motivated by geometry, documentation,
-  collection and how mediums themselves communicate ideas.
+  While Ruby offers the above disciplines as a structured service, their aim
+  lies in using clever design and beautiful communication to deliver measurable
+  results to a goal oriented business.
 thumbnail: /images/uploads/2019-5-arches-mural.jpg
 caption: '5 Arches, Acrylic Mural, 2019'
 ---
-Hire Ruby to write, illustrate or design something for you.
+Hire Ruby to write & edit, illustrate or design something for you.
 
-Don’t hire Ruby for photography, 3D design or editing, they don’t do it.
+Don’t hire Ruby for photography, 3D design or video editing, they don’t do it.
 
 Visit their full archive of work at [archive.rubyph.com](http://archive.rubyph.com?subject=Hey!).
