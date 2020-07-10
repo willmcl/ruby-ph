@@ -12,8 +12,8 @@ intro: >-
 
 
   Ruby is currently looking to work on food & beverage brand identities, design
-  for accessible wayfinding, art direction for interior spaces, and creative/
-  arts events.
+  for accessible wayfinding, art direction for interior spaces, and digital
+  product design.
 thumbnail: /images/uploads/shirlow-street-studios_extended.gif
 caption: 'Logo & Brand for Philanthropic Art Studio, Shirlow Street Studios, 2019'
 ---
