@@ -23,4 +23,4 @@ Don’t hire Ruby to film or photograph things. Don't ask Ruby to illustrate som
 
 *All work presented on social media is free to repost with top-line credit, but not for use with any business offers or for reprint on products without prior permission.* 
 
-Visit their [Youtube Channel](https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw), ~~Listen to their Podcast~~ or view their work on [Instagram](http://instagram.com/irlrubyph).
+Visit their [Youtube Channel](https://www.youtube.com/channel/UCSGL5jOpXX6YuwXiUDRZ5Lw), Watch a [livestream](twitch.tv/irlrubyph), ~~Listen to their Podcast~~ or view their work on [Instagram](http://instagram.com/irlrubyph).
